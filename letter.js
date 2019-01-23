@@ -1,5 +1,5 @@
 // Constructor function for creating underscores or inserting correctly guessed letters
-const Letters = function() {
+const Letters = function(userInput) {
     // A string value to store the underlying character for the letter
     this.character = character;
     // A boolean value that stores whether that letter has been guessed yet
