@@ -1,13 +1,13 @@
 // Constructor function for creating underscores or inserting correctly guessed letters
 const Letters = function(userInput) {
     // A string value to store the underlying character for the letter
-    this.character = character;
+    this.character = '';
     // A boolean value that stores whether that letter has been guessed yet
     this.guessed = false;
     // A function that returns the underlying character if the letter has been guessed, or a placeholder (like an underscore) if the letter has not been guessed
     this.returnSymbol = function() {
             if(this.guessed === true) {
-                return character;
+                return userInput;
             } else {
                 return `_`;
             }
