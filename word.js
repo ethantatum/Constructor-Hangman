@@ -10,7 +10,8 @@ const Word = function(selectedWord, userInput) {
     // A function that takes a character as an argument and calls the guess function on each letter object (the second function defined in Letter.js)
         this.wordGuess = function(userInput) {
             this.wordLetters.map(this.userGuess(userInput));
-            return
+            this.wordLetters.map(this.returnSymbol());
+            return this.wordLetters;
         }
 }
 
