@@ -4,7 +4,6 @@ const inquirer = require('inquirer');
 
 const library = [`horizontal`, `obstinate`, `terrifying`, `negligence`, `confirmation`, `hesitation`, `excellence`, `fantastic`];
 
-
 let wordSelect = function() {
     if(library.length > 0) {
         let currentWord = library[0];
