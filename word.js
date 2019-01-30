@@ -9,7 +9,6 @@ let Word = function(selectedWord) {
         });
     // A function that returns a string representing the word. This should call the function on each letter object (the first function defined in Letter.js) that displays the character or an underscore and concatenate those together
         this.wordString = function() {
-            console.log(`testfire`);
             let wordArray = this.wordLetters.map(function(letterObj){
                 return letterObj.returnSymbol();
             });
