@@ -4,8 +4,11 @@ const inquirer = require('inquirer');
 
 const library = [`horizontal`, `obstinate`, `terrifying`, `negligence`, `confirmation`, `hesitation`, `excellence`, `fantastic`];
 
+// Declaring a global variable to use in the askUser function
 let userInput;
 
+// Function to use inquirer to get a letter from the user
+    // Stuck on how to pass userInput into Word.wordguess function
 const askUser = function() {
     inquirer
         .prompt([
@@ -20,6 +23,7 @@ const askUser = function() {
     })
 }
 
+// Function to pull word from bank and pass it into Word constructor
 let startGame = function() {
     if(library.length > 0) {
         let currentWord = library[0];
