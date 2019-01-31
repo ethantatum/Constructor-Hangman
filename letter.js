@@ -16,6 +16,9 @@ const Letters = function(letter) {
     this.userGuess = function(userInput) {
         if(userInput.toLowerCase() === this.character) {
             this.guessed = true;
+            return true;
+        } else {
+            return false;
         }
     };
 }

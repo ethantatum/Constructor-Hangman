@@ -16,8 +16,10 @@ let Word = function(selectedWord) {
         }
     // A function that takes a character as an argument and calls the guess function on each letter object (the second function defined in Letter.js)
         this.wordGuess = function(userInput) {
-            this.wordLetters.map(this.userGuess(userInput));
-            this.wordLetters.map(this.returnSymbol());
+            this.wordLetters.map(function(letterObj) {
+                letterObj.userGuess(userInput)
+            }); 
+            this.wordLetters.map(letterObj => letterObj.returnSymbol());
             return this.wordLetters;
         }
 }
